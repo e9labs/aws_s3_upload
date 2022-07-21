@@ -72,7 +72,7 @@ class AwsS3 {
     } catch (e) {
       print('Failed to upload to AWS, with exception:');
       print(e);
-      return null;
+      rethrow;
     }
   }
 }
